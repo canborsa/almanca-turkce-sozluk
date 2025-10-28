@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ui.records.AddHealthRecordFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/blood_pressure"
+        android:textAppearance="?attr/textAppearanceHeadline6" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextSystolic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/systolic"
+            android:inputType="number"
+            android:textSize="28sp"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/editTextDiastolic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/diastolic"
+            android:inputType="number"
+            android:textSize="28sp"
+            android:autofillHints="" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/blood_sugar"
+        android:textAppearance="?attr/textAppearanceHeadline6" />
+
+    <EditText
+        android:id="@+id/editTextSugar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/sugar_level"
+        android:inputType="number"
+        android:textSize="28sp"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:text="@string/save" />
+
+</LinearLayout>

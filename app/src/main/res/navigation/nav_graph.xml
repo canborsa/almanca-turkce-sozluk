@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/userListFragment">
+
+    <fragment
+        android:id="@+id/userListFragment"
+        android:name="com.example.healthtracker.ui.user.UserListFragment"
+        android:label="Users"
+        tools:layout="@layout/fragment_user_list">
+        <action
+            android:id="@+id/action_userListFragment_to_addUserFragment"
+            app:destination="@id/addUserFragment" />
+        <action
+            android:id="@+id/action_userListFragment_to_healthRecordListFragment"
+            app:destination="@id/healthRecordListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addUserFragment"
+        android:name="com.example.healthtracker.ui.user.AddUserFragment"
+        android:label="Add User"
+        tools:layout="@layout/fragment_add_user" />
+    <fragment
+        android:id="@+id/addHealthRecordFragment"
+        android:name="com.example.healthtracker.ui.records.AddHealthRecordFragment"
+        android:label="Add Health Record"
+        tools:layout="@layout/fragment_add_health_record">
+        <argument
+            android:name="userId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/healthRecordListFragment"
+        android:name="com.example.healthtracker.ui.records.HealthRecordListFragment"
+        android:label="Health Records"
+        tools:layout="@layout/fragment_health_record_list">
+        <argument
+            android:name="userId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_healthRecordListFragment_to_addHealthRecordFragment"
+            app:destination="@id/addHealthRecordFragment" />
+    </fragment>
+</navigation>
