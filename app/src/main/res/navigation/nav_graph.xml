@@ -3,44 +3,35 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/userListFragment">
+    app:startDestination="@id/recordListFragment">
 
     <fragment
-        android:id="@+id/userListFragment"
-        android:name="com.example.healthtracker.ui.user.UserListFragment"
-        android:label="Users"
-        tools:layout="@layout/fragment_user_list">
+        android:id="@+id/recordListFragment"
+        android:name="com.example.healthtracker.ui.RecordListFragment"
+        android:label="Kayıtlar"
+        tools:layout="@layout/fragment_record_list">
         <action
-            android:id="@+id/action_userListFragment_to_addUserFragment"
+            android:id="@+id/action_to_addUserFragment"
             app:destination="@id/addUserFragment" />
         <action
-            android:id="@+id/action_userListFragment_to_healthRecordListFragment"
-            app:destination="@id/healthRecordListFragment" />
+            android:id="@+id/action_to_addRecordFragment"
+            app:destination="@id/addRecordFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/addUserFragment"
-        android:name="com.example.healthtracker.ui.user.AddUserFragment"
-        android:label="Add User"
+        android:name="com.example.healthtracker.ui.AddUserFragment"
+        android:label="Kullanıcı Ekle"
         tools:layout="@layout/fragment_add_user" />
+
     <fragment
-        android:id="@+id/addHealthRecordFragment"
-        android:name="com.example.healthtracker.ui.records.AddHealthRecordFragment"
-        android:label="Add Health Record"
-        tools:layout="@layout/fragment_add_health_record">
+        android:id="@+id/addRecordFragment"
+        android:name="com.example.healthtracker.ui.AddRecordFragment"
+        android:label="Kayıt Ekle"
+        tools:layout="@layout/fragment_add_record">
         <argument
             android:name="userId"
-            app:argType="integer" />
+            app:argType="long" />
     </fragment>
-    <fragment
-        android:id="@+id/healthRecordListFragment"
-        android:name="com.example.healthtracker.ui.records.HealthRecordListFragment"
-        android:label="Health Records"
-        tools:layout="@layout/fragment_health_record_list">
-        <argument
-            android:name="userId"
-            app:argType="integer" />
-        <action
-            android:id="@+id/action_healthRecordListFragment_to_addHealthRecordFragment"
-            app:destination="@id/addHealthRecordFragment" />
-    </fragment>
+
 </navigation>
