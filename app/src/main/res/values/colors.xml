@@ -4,4 +4,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="red">#FFFF0000</color>
     <color name="blue">#FF0000FF</color>
+    <color name="gradient_start_color">#FF7E5F</color>
+    <color name="gradient_end_color">#FEB47B</color>
 </resources>
