@@ -6,7 +6,7 @@ apply plugin: 'androidx.navigation.safeargs.kotlin'
 android {
     compileSdkVersion 33
     defaultConfig {
-        applicationId "com.example.healthtracker"
+        applicationId "com.assemcorp.cuttingapp"
         minSdkVersion 21
         targetSdkVersion 33
         versionCode 1
@@ -49,6 +49,9 @@ dependencies {
     // Navigation
     implementation "androidx.navigation:navigation-fragment-ktx:2.5.3"
     implementation "androidx.navigation:navigation-ui-ktx:2.5.3"
+
+    // Gson
+    implementation 'com.google.code.gson:gson:2.9.0'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
