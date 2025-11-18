@@ -1,15 +1,19 @@
 <resources>
-    <string name="app_name">Health Tracker</string>
-    <string name="add_user">Add User</string>
-    <string name="first_name">First Name</string>
-    <string name="last_name">Last Name</string>
-    <string name="age">Age</string>
-    <string name="save">Save</string>
-    <string name="blood_pressure">Blood Pressure</string>
-    <string name="systolic">Systolic</string>
-    <string name="diastolic">Diastolic</string>
-    <string name="blood_sugar">Blood Sugar</string>
-    <string name="sugar_level">Sugar Level</string>
-    <string name="add_record">Add Record</string>
-    <string name="share_as_pdf">Share as PDF</string>
+    <string name="app_name">Assemcorp Cutting App</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="material_selection">Material Selection</string>
+    <string name="parts_to_cut">Parts to Cut</string>
+    <string name="width">Width</string>
+    <string name="height">Height</string>
+    <string name="quantity">Quantity</string>
+    <string name="add_part">Add Part</string>
+    <string name="added_parts">Added Parts</string>
+    <string name="calculate">Calculate Cutting Plan</string>
+    <string name="free_size">Free Size</string>
+    <string name="roll_width">Roll Width</string>
+    <string name="roll_height">Roll Height</string>
+    <string name="invalid_roll_dimensions">Please enter valid roll dimensions.</string>
+    <string name="save_as_pdf">Save as PDF</string>
+    <string name="cutting_plan">Cutting Plan</string>
+    <string name="pdf_saved">PDF saved to %1$s</string>
 </resources>

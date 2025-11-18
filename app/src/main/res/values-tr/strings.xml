@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Assemcorp Kesim Programı</string>
+    <string name="customer_name">Müşteri Adı</string>
+    <string name="material_selection">Ana Malzeme Seçimi</string>
+    <string name="parts_to_cut">Kesilecek Parçalar</string>
+    <string name="width">Genişlik</string>
+    <string name="height">Yükseklik</string>
+    <string name="quantity">Adet</string>
+    <string name="add_part">Parça Ekle</string>
+    <string name="added_parts">Eklenen Parçalar</string>
+    <string name="calculate">Kesim Planını Hesapla</string>
+    <string name="free_size">Serbest Ölçü</string>
+    <string name="roll_width">Rulo Genişliği</string>
+    <string name="roll_height">Rulo Yüksekliği</string>
+    <string name="invalid_roll_dimensions">Lütfen geçerli rulo boyutları girin.</string>
+    <string name="save_as_pdf">PDF Olarak Kaydet</string>
+    <string name="cutting_plan">Kesim Planı</string>
+    <string name="pdf_saved">PDF şuraya kaydedildi: %1$s</string>
+</resources>
