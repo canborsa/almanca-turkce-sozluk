@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "HealthTracker"
+rootProject.name = "RuloCUT"
 include ':app'
