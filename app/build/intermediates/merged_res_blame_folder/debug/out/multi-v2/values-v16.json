@@ -4,17 +4,7 @@
             "outputFile": "com.maden.demirci.game.app-mergeDebugResources-2:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/home/jules/.gradle/caches/transforms-3/dce4c7ffbfdb03438b21b1dfb0b5b1c2/transformed/core-1.12.0/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "/home/jules/.gradle/caches/transforms-3/827e824386667c33c4d66f8b3feab771/transformed/appcompat-1.6.1/res/values-v16/values-v16.xml",
+                    "source": "/home/jules/.gradle/caches/8.8/transforms/c2f3162451b7de431e07a72fd54a49e8/transformed/appcompat-1.6.1/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -30,6 +20,16 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "/home/jules/.gradle/caches/8.8/transforms/f579b7dbdeba1ecf33405355234c51ba/transformed/core-1.12.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
                     }
                 }
             ]

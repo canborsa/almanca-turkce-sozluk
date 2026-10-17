@@ -1,30 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
     <color name="black">#FF000000</color>
-    <color name="card_background">#1E1E1E</color>
-    <color name="copper_brown">#CD7F32</color>
-    <color name="dark_background">#121212</color>
-    <color name="forge_red">#D32F2F</color>
-    <color name="gold_yellow">#FFC107</color>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#6200EE</color>
-    <color name="purple_700">#3700B3</color>
-    <color name="silver_gray">#E0E0E0</color>
-    <color name="teal_200">#03DAC5</color>
-    <color name="teal_700">#018786</color>
+    <color name="blue">#FF0000FF</color>
+    <color name="red">#FFFF0000</color>
     <color name="white">#FFFFFFFF</color>
-    <string name="app_name">Maden ve Demirci</string>
-    <string name="coins_label">🪙 İşlenmiş Altın</string>
-    <string name="copper_label">🟤 Bakır</string>
-    <string name="gold_label">🟡 Altın</string>
-    <string name="silver_label">⚪ Gümüş</string>
-    <string name="tab_forge">🔨 Demirci Katı</string>
-    <string name="tab_mine">⛏️ Maden Katı</string>
-    <string name="transfer_button">Demirciye Aktar ➔</string>
-    <string name="upg_carriers">🚚👷 Taşıyıcılar</string>
-    <string name="upg_forge">🔨 Demirci &amp; Örs</string>
-    <string name="upg_miners">⛏️👷 Madenciler</string>
-    <string name="upg_pickaxe">⛏️ Kazma &amp; Derinlik</string>
+    <string name="add_record">Add Record</string>
+    <string name="add_user">Add User</string>
+    <string name="age">Age</string>
+    <string name="app_name">Health Tracker</string>
+    <string name="blood_pressure">Blood Pressure</string>
+    <string name="blood_sugar">Blood Sugar</string>
+    <string name="diastolic">Diastolic</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="save">Save</string>
+    <string name="share_as_pdf">Share as PDF</string>
+    <string name="sugar_level">Sugar Level</string>
+    <string name="systolic">Systolic</string>
     <style name="Theme.HealthTracker" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
 
         <item name="colorPrimary">@color/blue</item>

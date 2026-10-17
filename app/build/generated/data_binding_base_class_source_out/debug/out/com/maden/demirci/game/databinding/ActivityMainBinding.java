@@ -4,86 +4,33 @@ package com.maden.demirci.game.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.ProgressBar;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
-import com.google.android.material.tabs.TabLayout;
 import com.maden.demirci.game.R;
-import com.maden.demirci.game.view.ForgeView;
-import com.maden.demirci.game.view.MineView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class ActivityMainBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button btnTabForge;
+  public final FragmentContainerView navHostFragment;
 
-  @NonNull
-  public final Button btnTabMine;
-
-  @NonNull
-  public final Button btnTransfer;
-
-  @NonNull
-  public final ForgeView forgeView;
-
-  @NonNull
-  public final MineView mineView;
-
-  @NonNull
-  public final ProgressBar pbWarehouse;
-
-  @NonNull
-  public final TabLayout tabUpgradeCategories;
-
-  @NonNull
-  public final LinearLayout topHudContainer;
-
-  @NonNull
-  public final TextView tvCoins;
-
-  @NonNull
-  public final TextView tvOresCount;
-
-  @NonNull
-  public final TextView tvWarehouseCapacity;
-
-  @NonNull
-  public final LinearLayout upgradeContentLayout;
-
-  private ActivityMainBinding(@NonNull LinearLayout rootView, @NonNull Button btnTabForge,
-      @NonNull Button btnTabMine, @NonNull Button btnTransfer, @NonNull ForgeView forgeView,
-      @NonNull MineView mineView, @NonNull ProgressBar pbWarehouse,
-      @NonNull TabLayout tabUpgradeCategories, @NonNull LinearLayout topHudContainer,
-      @NonNull TextView tvCoins, @NonNull TextView tvOresCount,
-      @NonNull TextView tvWarehouseCapacity, @NonNull LinearLayout upgradeContentLayout) {
+  private ActivityMainBinding(@NonNull ConstraintLayout rootView,
+      @NonNull FragmentContainerView navHostFragment) {
     this.rootView = rootView;
-    this.btnTabForge = btnTabForge;
-    this.btnTabMine = btnTabMine;
-    this.btnTransfer = btnTransfer;
-    this.forgeView = forgeView;
-    this.mineView = mineView;
-    this.pbWarehouse = pbWarehouse;
-    this.tabUpgradeCategories = tabUpgradeCategories;
-    this.topHudContainer = topHudContainer;
-    this.tvCoins = tvCoins;
-    this.tvOresCount = tvOresCount;
-    this.tvWarehouseCapacity = tvWarehouseCapacity;
-    this.upgradeContentLayout = upgradeContentLayout;
+    this.navHostFragment = navHostFragment;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -108,81 +55,13 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnTabForge;
-      Button btnTabForge = ViewBindings.findChildViewById(rootView, id);
-      if (btnTabForge == null) {
+      id = R.id.nav_host_fragment;
+      FragmentContainerView navHostFragment = ViewBindings.findChildViewById(rootView, id);
+      if (navHostFragment == null) {
         break missingId;
       }
 
-      id = R.id.btnTabMine;
-      Button btnTabMine = ViewBindings.findChildViewById(rootView, id);
-      if (btnTabMine == null) {
-        break missingId;
-      }
-
-      id = R.id.btnTransfer;
-      Button btnTransfer = ViewBindings.findChildViewById(rootView, id);
-      if (btnTransfer == null) {
-        break missingId;
-      }
-
-      id = R.id.forgeView;
-      ForgeView forgeView = ViewBindings.findChildViewById(rootView, id);
-      if (forgeView == null) {
-        break missingId;
-      }
-
-      id = R.id.mineView;
-      MineView mineView = ViewBindings.findChildViewById(rootView, id);
-      if (mineView == null) {
-        break missingId;
-      }
-
-      id = R.id.pbWarehouse;
-      ProgressBar pbWarehouse = ViewBindings.findChildViewById(rootView, id);
-      if (pbWarehouse == null) {
-        break missingId;
-      }
-
-      id = R.id.tabUpgradeCategories;
-      TabLayout tabUpgradeCategories = ViewBindings.findChildViewById(rootView, id);
-      if (tabUpgradeCategories == null) {
-        break missingId;
-      }
-
-      id = R.id.topHudContainer;
-      LinearLayout topHudContainer = ViewBindings.findChildViewById(rootView, id);
-      if (topHudContainer == null) {
-        break missingId;
-      }
-
-      id = R.id.tvCoins;
-      TextView tvCoins = ViewBindings.findChildViewById(rootView, id);
-      if (tvCoins == null) {
-        break missingId;
-      }
-
-      id = R.id.tvOresCount;
-      TextView tvOresCount = ViewBindings.findChildViewById(rootView, id);
-      if (tvOresCount == null) {
-        break missingId;
-      }
-
-      id = R.id.tvWarehouseCapacity;
-      TextView tvWarehouseCapacity = ViewBindings.findChildViewById(rootView, id);
-      if (tvWarehouseCapacity == null) {
-        break missingId;
-      }
-
-      id = R.id.upgradeContentLayout;
-      LinearLayout upgradeContentLayout = ViewBindings.findChildViewById(rootView, id);
-      if (upgradeContentLayout == null) {
-        break missingId;
-      }
-
-      return new ActivityMainBinding((LinearLayout) rootView, btnTabForge, btnTabMine, btnTransfer,
-          forgeView, mineView, pbWarehouse, tabUpgradeCategories, topHudContainer, tvCoins,
-          tvOresCount, tvWarehouseCapacity, upgradeContentLayout);
+      return new ActivityMainBinding((ConstraintLayout) rootView, navHostFragment);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

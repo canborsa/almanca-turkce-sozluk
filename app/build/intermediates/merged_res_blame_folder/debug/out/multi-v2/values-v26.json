@@ -4,7 +4,7 @@
             "outputFile": "com.maden.demirci.game.app-mergeDebugResources-2:/values-v26/values-v26.xml",
             "map": [
                 {
-                    "source": "/home/jules/.gradle/caches/transforms-3/827e824386667c33c4d66f8b3feab771/transformed/appcompat-1.6.1/res/values-v26/values-v26.xml",
+                    "source": "/home/jules/.gradle/caches/8.8/transforms/c2f3162451b7de431e07a72fd54a49e8/transformed/appcompat-1.6.1/res/values-v26/values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",
