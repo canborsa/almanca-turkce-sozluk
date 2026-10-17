@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "/home/jules/.gradle/daemon/8.5/com.maden.demirci.game.app-merged_res-4:/layout_fragment_record_list.xml.flat",
+        "source": "/home/jules/.gradle/daemon/8.5/com.maden.demirci.game.app-main-6:/layout/fragment_record_list.xml"
+    },
+    {
+        "merged": "/home/jules/.gradle/daemon/8.5/com.maden.demirci.game.app-merged_res-4:/layout_activity_main.xml.flat",
+        "source": "/home/jules/.gradle/daemon/8.5/com.maden.demirci.game.app-main-6:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/jules/.gradle/daemon/8.5/com.maden.demirci.game.app-merged_res-4:/layout_fragment_add_user.xml.flat",
+        "source": "/home/jules/.gradle/daemon/8.5/com.maden.demirci.game.app-main-6:/layout/fragment_add_user.xml"
+    },
+    {
+        "merged": "/home/jules/.gradle/daemon/8.5/com.maden.demirci.game.app-merged_res-4:/layout_fragment_health_record_list.xml.flat",
+        "source": "/home/jules/.gradle/daemon/8.5/com.maden.demirci.game.app-main-6:/layout/fragment_health_record_list.xml"
+    },
+    {
+        "merged": "/home/jules/.gradle/daemon/8.5/com.maden.demirci.game.app-merged_res-4:/layout_item_record.xml.flat",
+        "source": "/home/jules/.gradle/daemon/8.5/com.maden.demirci.game.app-main-6:/layout/item_record.xml"
+    },
+    {
+        "merged": "/home/jules/.gradle/daemon/8.5/com.maden.demirci.game.app-merged_res-4:/layout_fragment_add_record.xml.flat",
+        "source": "/home/jules/.gradle/daemon/8.5/com.maden.demirci.game.app-main-6:/layout/fragment_add_record.xml"
+    },
+    {
+        "merged": "/home/jules/.gradle/daemon/8.5/com.maden.demirci.game.app-merged_res-4:/layout_fragment_user_list.xml.flat",
+        "source": "/home/jules/.gradle/daemon/8.5/com.maden.demirci.game.app-main-6:/layout/fragment_user_list.xml"
+    },
+    {
+        "merged": "/home/jules/.gradle/daemon/8.5/com.maden.demirci.game.app-merged_res-4:/layout_recyclerview_item.xml.flat",
+        "source": "/home/jules/.gradle/daemon/8.5/com.maden.demirci.game.app-main-6:/layout/recyclerview_item.xml"
+    },
+    {
+        "merged": "/home/jules/.gradle/daemon/8.5/com.maden.demirci.game.app-merged_res-4:/layout_fragment_add_health_record.xml.flat",
+        "source": "/home/jules/.gradle/daemon/8.5/com.maden.demirci.game.app-main-6:/layout/fragment_add_health_record.xml"
+    },
+    {
+        "merged": "/home/jules/.gradle/daemon/8.5/com.maden.demirci.game.app-merged_res-4:/navigation_nav_graph.xml.flat",
+        "source": "/home/jules/.gradle/daemon/8.5/com.maden.demirci.game.app-main-6:/navigation/nav_graph.xml"
+    },
+    {
+        "merged": "/home/jules/.gradle/daemon/8.5/com.maden.demirci.game.app-merged_res-4:/layout_item_upgrade_card.xml.flat",
+        "source": "/home/jules/.gradle/daemon/8.5/com.maden.demirci.game.app-main-6:/layout/item_upgrade_card.xml"
+    },
+    {
+        "merged": "/home/jules/.gradle/daemon/8.5/com.maden.demirci.game.app-merged_res-4:/xml_provider_paths.xml.flat",
+        "source": "/home/jules/.gradle/daemon/8.5/com.maden.demirci.game.app-main-6:/xml/provider_paths.xml"
+    },
+    {
+        "merged": "/home/jules/.gradle/daemon/8.5/com.maden.demirci.game.app-merged_res-4:/layout_health_record_item.xml.flat",
+        "source": "/home/jules/.gradle/daemon/8.5/com.maden.demirci.game.app-main-6:/layout/health_record_item.xml"
+    },
+    {
+        "merged": "/home/jules/.gradle/daemon/8.5/com.maden.demirci.game.app-merged_res-4:/drawable_ic_blood_drop.xml.flat",
+        "source": "/home/jules/.gradle/daemon/8.5/com.maden.demirci.game.app-main-6:/drawable/ic_blood_drop.xml"
+    }
+]
