@@ -1,0 +1,182 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_background"
+    android:orientation="vertical">
+
+    <!-- A) Üst Bilgi Paneli & Lojistik Çubuğu (~%15) -->
+    <LinearLayout
+        android:id="@+id/topHudContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.6"
+        android:background="#1F1916"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Cüzdan & Kaynaklar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvCoins"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🪙 0"
+                android:textColor="@color/gold_yellow"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvOresCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🟤 0 | ⚪ 0 | 🟡 0"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <!-- Depo Göstergesi (Warehouse HUD) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvWarehouseCapacity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Depo: 0 / 100 kg"
+                    android:textColor="#B0BEC5"
+                    android:textSize="12sp" />
+
+                <ProgressBar
+                    android:id="@+id/pbWarehouse"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="2dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@android:drawable/progress_horizontal" />
+            </LinearLayout>
+
+            <!-- Taşıma Butonu -->
+            <Button
+                android:id="@+id/btnTransfer"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="#FF8F00"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/transfer_button"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- B) Görsel Etkileşim Alanı & Tab Switcher (~%45) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5"
+        android:orientation="vertical">
+
+        <!-- Tab Buttons for Mine / Forge View -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="#2C221E"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnTabMine"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/tab_mine"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnTabForge"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/tab_forge"
+                android:textColor="#9E9E9E"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- View Container -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.maden.demirci.game.view.MineView
+                android:id="@+id/mineView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.maden.demirci.game.view.ForgeView
+                android:id="@+id/forgeView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- C) Yönetim & Geliştirme Paneli (Upgrade Panel ~%40) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.0"
+        android:background="#181818"
+        android:orientation="vertical">
+
+        <!-- Upgrade Category Tabs -->
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabUpgradeCategories"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#212121"
+            app:tabIndicatorColor="@color/gold_yellow"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/gold_yellow"
+            app:tabTextColor="#9E9E9E" />
+
+        <!-- Scrollable Upgrade Items Container -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:id="@+id/upgradeContentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>
