@@ -28,7 +28,7 @@ if (!$review) {
 }
 
 if ($review['user_id'] != $user['id'] && $user['role'] !== 'ADMIN') {
-    Response::error("Bu yorumu düzenleme yetkiniz yok.", 433, "FORBIDDEN");
+    Response::error("Bu yorumu düzenleme yetkiniz yok.", 403, "FORBIDDEN");
 }
 
 $updateStmt = $db->prepare("UPDATE reviews SET body = ?, title = ?, spoiler = ? WHERE id = ?");

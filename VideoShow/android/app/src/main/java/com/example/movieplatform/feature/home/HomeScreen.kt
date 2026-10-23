@@ -24,15 +24,14 @@ import com.example.movieplatform.domain.model.Movie
 
 @Composable
 fun HomeScreen(
+    viewModel: HomeViewModel? = null,
     onMovieClick: (Int) -> Unit
 ) {
-    // Sample movies for UI presentation
-    val trendingMovies = remember {
-        listOf(
-            Movie(1, 157336, "tt0816692", "Yıldızlararası", "Interstellar", "Uzay yolculuğu", "Geleceğimiz uzayda", "2014-11-05", 2014, 169, "/gEU2QniE6E77NI6lCU6Mxl4vO2i.jpg", "/xJHokMbljv3AA1S3i3z239339.jpg", 8.4, 4.5, 4.5, true, true, true, emptyList(), emptyList(), emptyList()),
-            Movie(2, 27205, "tt1375666", "Başlangıç", "Inception", "Rüya içinde rüya", "Zihniniz suç mahallinizdir", "2010-07-16", 2010, 148, "/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg", "/s3T19R22fA28cuA8298492.jpg", 8.3, 4.4, null, false, false, false, emptyList(), emptyList(), emptyList())
-        )
-    }
+    val uiState by (viewModel?.uiState ?: remember { MutableStateFlow(HomeUiState.Success(
+        trending = listOf(Movie(1, 157336, "tt0816692", "Yıldızlararası", "Interstellar", "Uzay yolculuğu", "Geleceğimiz uzayda", "2014-11-05", 2014, 169, "/gEU2QniE6E77NI6lCU6Mxl4vO2i.jpg", "/xJHokMbljv3AA1S3i3z239339.jpg", 8.4, 4.5, 4.5, true, true, true, emptyList(), emptyList(), emptyList())),
+        popular = listOf(Movie(2, 27205, "tt1375666", "Başlangıç", "Inception", "Rüya içinde rüya", "Zihniniz suç mahallinizdir", "2010-07-16", 2010, 148, "/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg", "/s3T19R22fA28cuA8298492.jpg", 8.3, 4.4, null, false, false, false, emptyList(), emptyList(), emptyList())),
+        topRated = listOf(Movie(1, 157336, "tt0816692", "Yıldızlararası", "Interstellar", "Uzay yolculuğu", "Geleceğimiz uzayda", "2014-11-05", 2014, 169, "/gEU2QniE6E77NI6lCU6Mxl4vO2i.jpg", "/xJHokMbljv3AA1S3i3z239339.jpg", 8.4, 4.5, 4.5, true, true, true, emptyList(), emptyList(), emptyList()))
+    )) }).collectAsState()
 
     LazyColumn(
         modifier = Modifier
@@ -50,10 +49,25 @@ fun HomeScreen(
             )
         }
 
-        item { MovieSection("🔥 Şu Anda Popüler", trendingMovies, onMovieClick) }
-        item { MovieSection("⭐ En Yüksek Puanlı", trendingMovies, onMovieClick) }
-        item { MovieSection("👥 Kullanıcılarımızın Favorileri", trendingMovies, onMovieClick) }
-        item { MovieSection("🎯 Sana Özel", trendingMovies, onMovieClick) }
+        when (val state = uiState) {
+            is HomeUiState.Loading -> {
+                item {
+                    Box(modifier = Modifier.fillMaxWidth().height(200.dp), contentAlignment = Alignment.Center) {
+                        CircularProgressIndicator(color = PrimaryGold)
+                    }
+                }
+            }
+            is HomeUiState.Success -> {
+                item { MovieSection("🔥 Şu Anda Popüler", state.popular, onMovieClick) }
+                item { MovieSection("⭐ En Yüksek Puanlı", state.topRated, onMovieClick) }
+                item { MovieSection("👥 Trend Filmler", state.trending, onMovieClick) }
+            }
+            is HomeUiState.Error -> {
+                item {
+                    Text(state.message, color = Color.Red, modifier = Modifier.padding(16.dp))
+                }
+            }
+        }
     }
 }
 

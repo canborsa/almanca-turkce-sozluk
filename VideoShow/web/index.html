@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VideoShow – Sinema, Film Keşfi ve Film Günlüğü Platformu</title>
+  <link rel="stylesheet" href="web/css/style.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="logo" onclick="app.navigate('home')">
+        🎬 VideoShow
+      </a>
+      <ul class="nav-links">
+        <li><a href="#" class="nav-link active" data-view="home">Ana Sayfa</a></li>
+        <li><a href="#" class="nav-link" data-view="discover">Keşfet</a></li>
+        <li><a href="#" class="nav-link" data-view="search">Arama</a></li>
+        <li><a href="#" class="nav-link" data-view="library">Kütüphanem</a></li>
+        <li><a href="#" class="nav-link" data-view="diary">Günlüğüm</a></li>
+      </ul>
+      <div class="user-actions" id="user-auth-box">
+        <!-- Dynamic User Auth Box -->
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Views Container -->
+  <main>
+    <!-- 1. Home View -->
+    <section id="view-home">
+      <h2 class="section-title">🔥 Şu Anda Popüler</h2>
+      <div class="movie-grid" id="popular-grid"></div>
+
+      <h2 class="section-title" style="margin-top: 2rem;">⭐ En Yüksek Puanlı Klasikler</h2>
+      <div class="movie-grid" id="top-rated-grid"></div>
+    </section>
+
+    <!-- 2. Discover View -->
+    <section id="view-discover" style="display:none;">
+      <h2 class="section-title">🎯 Gelişmiş Çoklu Filtreleme</h2>
+      <div class="filter-bar">
+        <div class="filter-group">
+          <label>Film Türü</label>
+          <select id="genre-select" class="form-control">
+            <option value="">Tüm Türler</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>Minimum Çıkış Yılı</label>
+          <input type="number" id="year-min" class="form-control" placeholder="Örn: 2000" min="1900" max="2026">
+        </div>
+        <div class="filter-group">
+          <label>Minimum Puan</label>
+          <input type="number" id="rating-min" class="form-control" placeholder="Örn: 7.5" step="0.5" min="0" max="10">
+        </div>
+        <div class="filter-group">
+          <label>Sıralama</label>
+          <select id="sort-by" class="form-control">
+            <option value="popularity">En Popüler</option>
+            <option value="vote_average">En Yüksek Puanlı</option>
+            <option value="release_date">En Yeni</option>
+          </select>
+        </div>
+        <div class="filter-group" style="justify-content: flex-end;">
+          <button class="btn btn-primary" id="apply-filter-btn">Filtrele</button>
+        </div>
+      </div>
+
+      <div class="movie-grid" id="discover-grid"></div>
+    </section>
+
+    <!-- 3. Search View -->
+    <section id="view-search" style="display:none;">
+      <h2 class="section-title">🔎 Arama</h2>
+      <input type="text" id="search-input" class="form-control" placeholder="Film, oyuncu veya yönetmen adı yazın..." style="margin-bottom: 1.5rem; padding: 0.8rem; font-size: 1.1rem;">
+      <div class="movie-grid" id="search-grid"></div>
+    </section>
+
+    <!-- 4. Library View -->
+    <section id="view-library" style="display:none;">
+      <h2 class="section-title">❤️ Kütüphanem</h2>
+      <p style="color:var(--text-muted);">Favorileriniz, Watchlist'iniz ve İzledikleriniz burada listelenir.</p>
+    </section>
+
+    <!-- 5. Diary View -->
+    <section id="view-diary" style="display:none;">
+      <h2 class="section-title">📖 Film Günlüğüm</h2>
+      <p style="color:var(--text-muted);">İzleme geçmişiniz, verdiğiniz puanlar ve kişisel notlarınız.</p>
+    </section>
+
+    <!-- 6. Movie Detail View -->
+    <section id="view-detail" style="display:none;">
+      <!-- Dynamic Detail Content -->
+    </section>
+  </main>
+
+  <!-- Auth Modal -->
+  <div id="auth-modal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.8); z-index:200; justify-content:center; align-items:center;">
+    <div style="background:var(--bg-surface); padding:2rem; border-radius:10px; width:90%; max-width:400px;">
+      <h2 style="color:var(--primary-gold); margin-bottom:1rem;">Giriş Yap</h2>
+      <div class="filter-group" style="margin-bottom:1rem;">
+        <label>Kullanıcı Adı</label>
+        <input type="text" id="auth-username" class="form-control" placeholder="Kullanıcı adınız">
+      </div>
+      <div class="filter-group" style="margin-bottom:1.5rem;">
+        <label>Şifre</label>
+        <input type="password" id="auth-password" class="form-control" placeholder="Şifreniz">
+      </div>
+      <div style="display:flex; justify-content:flex-end; gap:0.5rem;">
+        <button class="btn btn-secondary" onclick="app.hideAuthModal()">İptal</button>
+        <button class="btn btn-primary" onclick="app.login(document.getElementById('auth-username').value, document.getElementById('auth-password').value)">Giriş Yap</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="nav-container" style="justify-content:center; flex-direction:column; gap:0.5rem;">
+      <p>VideoShow © 2026 - Reklamsız, Hızlı ve Modern Film Keşif Platformu</p>
+      <p style="font-size:0.8rem; color:var(--text-muted);">Film verileri ve görseller The Movie Database (TMDB) tarafından sağlanmaktadır.</p>
+    </div>
+  </footer>
+
+  <script src="web/js/app.js"></script>
+</body>
+</html>
