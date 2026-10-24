@@ -1,0 +1,10 @@
+# VideoShow Gitignore
+VideoShow/server/public_html/storage/database.sqlite
+VideoShow/server/public_html/storage/logs/*.log
+VideoShow/server/public_html/storage/cache/rate_limits/*.json
+VideoShow/android/.gradle/
+VideoShow/android/build/
+VideoShow/android/app/build/
+.idea/
+.gradle/
+build/
