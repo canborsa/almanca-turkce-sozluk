@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Fazenda Klondike</string>
+    <string name="coins">Moedas</string>
+    <string name="energy">Energia</string>
+    <string name="level">Nível</string>
+
+    <!-- Farm Actions -->
+    <string name="plot_empty">Campo Vazio</string>
+    <string name="plot_growing">Crescendo...</string>
+    <string name="plot_ready">Pronto para Colher!</string>
+    <string name="plant_wheat">Plantar Trigo (-1 Energia)</string>
+    <string name="harvest">Colher Trigo (+2 Trigo)</string>
+
+    <!-- Animal Actions -->
+    <string name="cow_barn">Celeiro de Vacas</string>
+    <string name="feed_cow">Alimentar Vaca (-2 Trigo)</string>
+    <string name="milk_cow">Ordemhar Leite (+1 Leite)</string>
+    <string name="cow_eating">Comendo trigo...</string>
+    <string name="cow_ready">Leite Pronto!</string>
+    <string name="cow_hungry">Vaca com Fome</string>
+
+    <!-- Truck / Orders -->
+    <string name="delivery_truck">Caminhão de Entrega</string>
+    <string name="truck_status_waiting">Aguardando carga...</string>
+    <string name="truck_status_delivering">Em entrega...</string>
+    <string name="truck_status_ready">Entregar Pedidos!</string>
+    <string name="deliver_order">Enviar Caminhão (+50 Ouro, +20 XP)</string>
+    <string name="order_requires">Requer: %1$d Trigo, %2$d Leite</string>
+
+    <!-- Resources / Inventory -->
+    <string name="inventory">Inventário</string>
+    <string name="wheat_count">Trigo: %1$d</string>
+    <string name="milk_count">Leite: %1$d</string>
+
+    <!-- Settings -->
+    <string name="settings">Configurações</string>
+    <string name="change_language">Selecionar Idioma</string>
+    <string name="nickname">Apelido do Jogador</string>
+    <string name="enter_nickname">Digite seu apelido...</string>
+    <string name="save_nickname">Salvar</string>
+    <string name="game_manual">Guia do Jogo</string>
+    <string name="legal_privacy">Política Legal e de Privacidade</string>
+    <string name="manual_text">Bem-vindo à Fazenda Klondike!\n\n1. Plante trigo em seus campos.\n2. Colha o trigo quando estiver pronto.\n3. Alimente as vacas para produzir leite fresco.\n4. Carregue o trigo e leite no caminhão para ganhar Ouro e XP!\n5. Suba de nível para expandir sua fazenda!</string>
+    <string name="legal_text">Conformidade e Termos do Google Play:\n\nEste jogo respeita a privacidade do usuário. Nenhum dado pessoal é compartilhado com terceiros. Todo o progresso do jogo é salvo localmente.</string>
+    <string name="close">Fechar</string>
+</resources>

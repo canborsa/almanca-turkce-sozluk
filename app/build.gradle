@@ -6,7 +6,7 @@ apply plugin: 'androidx.navigation.safeargs.kotlin'
 android {
     compileSdkVersion 33
     defaultConfig {
-        applicationId "com.example.healthtracker"
+        applicationId "com.playcem.klondikefarm"
         minSdkVersion 21
         targetSdkVersion 33
         versionCode 1

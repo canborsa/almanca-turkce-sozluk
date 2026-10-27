@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">مزرعة كلوندايك</string>
+    <string name="coins">العملات</string>
+    <string name="energy">الطاقة</string>
+    <string name="level">المستوى</string>
+
+    <!-- Farm Actions -->
+    <string name="plot_empty">حقل فارغ</string>
+    <string name="plot_growing">ينمو...</string>
+    <string name="plot_ready">جاهز للحصاد!</string>
+    <string name="plant_wheat">زراعة القمح (-1 طاقة)</string>
+    <string name="harvest">حصاد القمح (+2 قمح)</string>
+
+    <!-- Animal Actions -->
+    <string name="cow_barn">حظيرة الأبقار</string>
+    <string name="feed_cow">إطعام البقرة (-2 قمح)</string>
+    <string name="milk_cow">حلب الحليب (+1 حليب)</string>
+    <string name="cow_eating">تأكل القمح...</string>
+    <string name="cow_ready">الحليب جاهز!</string>
+    <string name="cow_hungry">بقرة جائعة</string>
+
+    <!-- Truck / Orders -->
+    <string name="delivery_truck">شاحنة التوصيل</string>
+    <string name="truck_status_waiting">بانتظار البضائع...</string>
+    <string name="truck_status_delivering">في طريق التوصيل...</string>
+    <string name="truck_status_ready">توصيل الطلبات!</string>
+    <string name="deliver_order">إرسال الشاحنة (+50 ذهب، +20 خبرة)</string>
+    <string name="order_requires">المطلوب: %1$d قمح، %2$d حليب</string>
+
+    <!-- Resources / Inventory -->
+    <string name="inventory">المخزون</string>
+    <string name="wheat_count">القمح: %1$d</string>
+    <string name="milk_count">الحليب: %1$d</string>
+
+    <!-- Settings -->
+    <string name="settings">الإعدادات</string>
+    <string name="change_language">اختر اللغة</string>
+    <string name="nickname">اسم اللاعب</string>
+    <string name="enter_nickname">أدخل الاسم المستعار...</string>
+    <string name="save_nickname">حفظ</string>
+    <string name="game_manual">دليل اللعبة</string>
+    <string name="legal_privacy">سياسة الخصوصية والشروط</string>
+    <string name="manual_text">مرحبًا بك في مزرعة كلوندايك!\n\n1. ازرع القمح في حقول المزرعة.\n2. احصد القمح عندما ينضج.\n3. أطعم القمح للأبقار لإنتاج الحليب الطازج.\n4. حمّل القمح والحليب في شاحنة التوصيل لكسب الذهب والخبرة!\n5. ارتقِ بمستواك لتوسيع مزرعتك!</string>
+    <string name="legal_text">الامتثال لشروط Google Play:\n\nتحترم هذه اللعبة خصوصية المستخدم. لا يتم مشاركة البيانات مع أطراف ثالثة. يتم حفظ تقدم اللعبة محليًا على جهازك.</string>
+    <string name="close">إغلاق</string>
+</resources>
