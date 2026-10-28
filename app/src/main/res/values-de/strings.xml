@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Klondike Bauernhof</string>
+    <string name="coins">Münzen</string>
+    <string name="energy">Energie</string>
+    <string name="level">Level</string>
+
+    <!-- Farm Actions -->
+    <string name="plot_empty">Leeres Feld</string>
+    <string name="plot_growing">Wächst...</string>
+    <string name="plot_ready">Bereit zur Ernte!</string>
+    <string name="plant_wheat">Weizen pflanzen (-1 Energie)</string>
+    <string name="harvest">Weizen ernten (+2 Weizen)</string>
+
+    <!-- Animal Actions -->
+    <string name="cow_barn">Kuhstall</string>
+    <string name="feed_cow">Kuh füttern (-2 Weizen)</string>
+    <string name="milk_cow">Milch melken (+1 Milch)</string>
+    <string name="cow_eating">Frisst Weizen...</string>
+    <string name="cow_ready">Milch bereit!</string>
+    <string name="cow_hungry">Hungrige Kuh</string>
+
+    <!-- Truck / Orders -->
+    <string name="delivery_truck">Lieferwagen</string>
+    <string name="truck_status_waiting">Wartet auf Ladung...</string>
+    <string name="truck_status_delivering">Auf Lieferung...</string>
+    <string name="truck_status_ready">Bestellung liefern!</string>
+    <string name="deliver_order">Lieferwagen senden (+50 Gold, +20 XP)</string>
+    <string name="order_requires">Benötigt: %1$d Weizen, %2$d Milch</string>
+
+    <!-- Resources / Inventory -->
+    <string name="inventory">Inventar</string>
+    <string name="wheat_count">Weizen: %1$d</string>
+    <string name="milk_count">Milch: %1$d</string>
+
+    <!-- Settings -->
+    <string name="settings">Einstellungen</string>
+    <string name="change_language">Sprache wählen</string>
+    <string name="nickname">Spielername</string>
+    <string name="enter_nickname">Spitznamen eingeben...</string>
+    <string name="save_nickname">Speichern</string>
+    <string name="game_manual">Spielanleitung</string>
+    <string name="legal_privacy">Rechtliches &amp; Datenschutz</string>
+    <string name="manual_text">Willkommen auf der Klondike-Farm!\n\n1. Pflanze Weizen auf deinen Feldern.\n2. Ernte Weizen, wenn er reif ist.\n3. Füttere Kühe mit Weizen, um frische Milch zu produzieren.\n4. Lade Weizen und Milch auf den Lieferwagen, um Gold und XP zu verdienen!\n5. Steige auf, um deine Farm zu erweitern!</string>
+    <string name="legal_text">Google Play Konformität &amp; Bedingungen:\n\nDieses Spiel respektiert den Datenschutz. Es werden keine persönlichen Daten an Dritte weitergegeben. Der Spielfortschritt wird lokal gespeichert.</string>
+    <string name="close">Schließen</string>
+</resources>

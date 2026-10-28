@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Klondike Çiftliği</string>
+    <string name="coins">Altın</string>
+    <string name="energy">Enerji</string>
+    <string name="level">Seviye</string>
+
+    <!-- Farm Actions -->
+    <string name="plot_empty">Boş Tarla</string>
+    <string name="plot_growing">Büyüyor...</string>
+    <string name="plot_ready">Hasata Hazır!</string>
+    <string name="plant_wheat">Buğday Ek (-1 Enerji)</string>
+    <string name="harvest">Buğday Hasat Et (+2 Buğday)</string>
+
+    <!-- Animal Actions -->
+    <string name="cow_barn">İnek Ahırı</string>
+    <string name="feed_cow">İneği Besle (-2 Buğday)</string>
+    <string name="milk_cow">Sütü Sağ (+1 Süt)</string>
+    <string name="cow_eating">Yem Yiyor...</string>
+    <string name="cow_ready">Süt Hazır!</string>
+    <string name="cow_hungry">Aç İnek</string>
+
+    <!-- Truck / Orders -->
+    <string name="delivery_truck">Sipariş Arabası</string>
+    <string name="truck_status_waiting">Yük Bekliyor...</string>
+    <string name="truck_status_delivering">Teslimatta...</string>
+    <string name="truck_status_ready">Siparişleri Gönder!</string>
+    <string name="deliver_order">Arabayı Gönder (+50 Altın, +20 XP)</string>
+    <string name="order_requires">Gerekli: %1$d Buğday, %2$d Süt</string>
+
+    <!-- Resources / Inventory -->
+    <string name="inventory">Envanter</string>
+    <string name="wheat_count">Buğday: %1$d</string>
+    <string name="milk_count">Süt: %1$d</string>
+
+    <!-- Settings -->
+    <string name="settings">Ayarlar</string>
+    <string name="change_language">Dil Seçimi</string>
+    <string name="nickname">Oyuncu Adı</string>
+    <string name="enter_nickname">Oyuncu adını girin...</string>
+    <string name="save_nickname">Kaydet</string>
+    <string name="game_manual">Oyun Kılavuzu</string>
+    <string name="legal_privacy">Yasal ve Gizlilik Politikası</string>
+    <string name="manual_text">Klondike Çiftliğine Hoş Geldiniz!\n\n1. Tarlalarınıza buğday ekin.\n2. Büyüdüğünde buğdayları hasat edin.\n3. Buğdaylarla ineklerinizi besleyin ve taze süt elde edin.\n4. Buğday ve sütleri sipariş arabasına yükleyip göndererek Altın ve XP kazanın!\n5. Seviye atlayarak çiftliğinizi büyütün!</string>
+    <string name="legal_text">Google Play Yasal Uyumluluk ve Koşullar:\n\nBu oyun kullanıcı gizliliğine saygı duyar. Kişisel verileriniz üçüncü taraflarla paylaşılmaz. Tüm oyun ilerlemeniz cihazınızda yerel olarak saklanır. Oyunu oynayarak kullanım koşullarımızı kabul etmiş olursunuz.</string>
+    <string name="close">Kapat</string>
+</resources>

@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Granja Klondike</string>
+    <string name="coins">Monedas</string>
+    <string name="energy">Energía</string>
+    <string name="level">Nivel</string>
+
+    <!-- Farm Actions -->
+    <string name="plot_empty">Parcela Vacía</string>
+    <string name="plot_growing">Creciendo...</string>
+    <string name="plot_ready">¡Lista para cosechar!</string>
+    <string name="plant_wheat">Plantar Trigo (-1 Energía)</string>
+    <string name="harvest">Cosechar Trigo (+2 Trigo)</string>
+
+    <!-- Animal Actions -->
+    <string name="cow_barn">Establo de Vacas</string>
+    <string name="feed_cow">Alimentar Vaca (-2 Trigo)</string>
+    <string name="milk_cow">Ordeñar Leche (+1 Leche)</string>
+    <string name="cow_eating">Comiendo trigo...</string>
+    <string name="cow_ready">¡Leche Lista!</string>
+    <string name="cow_hungry">Vaca Hambrienta</string>
+
+    <!-- Truck / Orders -->
+    <string name="delivery_truck">Camión de Reparto</string>
+    <string name="truck_status_waiting">Esperando carga...</string>
+    <string name="truck_status_delivering">En camino de entrega...</string>
+    <string name="truck_status_ready">¡Enviar Pedidos!</string>
+    <string name="deliver_order">Enviar Camión (+50 Oro, +20 XP)</string>
+    <string name="order_requires">Requiere: %1$d Trigo, %2$d Leche</string>
+
+    <!-- Resources / Inventory -->
+    <string name="inventory">Inventario</string>
+    <string name="wheat_count">Trigo: %1$d</string>
+    <string name="milk_count">Leche: %1$d</string>
+
+    <!-- Settings -->
+    <string name="settings">Configuración</string>
+    <string name="change_language">Seleccionar Idioma</string>
+    <string name="nickname">Nombre de Jugador</string>
+    <string name="enter_nickname">Ingresa apodo...</string>
+    <string name="save_nickname">Guardar</string>
+    <string name="game_manual">Guía del Juego</string>
+    <string name="legal_privacy">Política Legal y de Privacidad</string>
+    <string name="manual_text">¡Bienvenido a la Granja Klondike!\n\n1. Planta trigo en tus parcelas.\n2. Cosecha trigo cuando esté listo.\n3. Alimenta a las vacas para producir leche fresca.\n4. Carga trigo y leche en el camión para ganar Oro y Experiencia.\n5. Subes de nivel para expandir tu granja!</string>
+    <string name="legal_text">Cumplimiento de Google Play y Términos:\n\nEste juego respeta la privacidad. No se comparten datos con terceros. Tu progreso se guarda localmente en tu dispositivo.</string>
+    <string name="close">Cerrar</string>
+</resources>
