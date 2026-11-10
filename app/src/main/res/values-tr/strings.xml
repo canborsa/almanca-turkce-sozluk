@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">VitaLog</string>
+    <string name="tagline">Küçük Adımlar. Büyük Değişimler.</string>
+
+    <!-- Navigation -->
+    <string name="nav_dashboard">Kontrol Paneli</string>
+    <string name="nav_meals">Öğünler</string>
+    <string name="nav_habits">Alışkanlıklar</string>
+    <string name="nav_coach">AI Koç</string>
+    <string name="nav_reports">Raporlar</string>
+    <string name="nav_profile">Profil</string>
+
+    <!-- Dashboard -->
+    <string name="greeting_hello">Merhaba, %1$s!</string>
+    <string name="daily_status">Bugünkü sağlık ve yaşam durumunuz.</string>
+    <string name="card_calories">Kalori &amp; Enerji</string>
+    <string name="card_hydration">Su &amp; Sıvı Takibi</string>
+    <string name="card_fasting">Aralıklı Oruç</string>
+    <string name="card_habits">Aktif Mücadeleler</string>
+    <string name="card_activity">Günün Aktiviteleri</string>
+    <string name="card_weight">Kilo &amp; İlerleme</string>
+    <string name="card_ai_coach">AI Koç Önerisi</string>
+
+    <!-- Units & Metrics -->
+    <string name="unit_kcal">kcal</string>
+    <string name="unit_g">g</string>
+    <string name="unit_ml">ml</string>
+    <string name="unit_l">L</string>
+    <string name="unit_kg">kg</string>
+    <string name="unit_min">dk</string>
+    <string name="unit_steps">adım</string>
+
+    <!-- Meals & Nutrition -->
+    <string name="meal_breakfast">Kahvaltı</string>
+    <string name="meal_lunch">Öğle Yemeği</string>
+    <string name="meal_dinner">Akşam Yemeği</string>
+    <string name="meal_snack">Ara Öğün</string>
+    <string name="nutrient_protein">Protein</string>
+    <string name="nutrient_carbs">Karbonhidrat</string>
+    <string name="nutrient_fat">Yağ</string>
+    <string name="nutrient_sugar">Şeker</string>
+    <string name="nutrient_fiber">Lif</string>
+    <string name="nutrient_sodium">Sodyum</string>
+    <string name="add_food">Yiyecek Ekle</string>
+    <string name="search_food_hint">Yiyecek veya yemek ara...</string>
+    <string name="portion_size">Porsiyon</string>
+    <string name="quick_add">Hızlı Ekle</string>
+
+    <!-- Hydration -->
+    <string name="water_goal">Günlük Su Hedefi</string>
+    <string name="water_consumed">%1$d / %2$d ml</string>
+
+    <!-- Fasting -->
+    <string name="fasting_active">Oruç Devam Ediyor</string>
+    <string name="fasting_eating">Yeme Aralığı</string>
+    <string name="start_fast">Orucu Başlat</string>
+    <string name="end_fast">Orucu Bitir</string>
+
+    <!-- Habits & Challenges -->
+    <string name="challenge_sugar_free">Şekersiz Günler</string>
+    <string name="challenge_flour_free">Beyaz Unu Azaltma</string>
+    <string name="challenge_active_days">%1$d Günlük Seri</string>
+    <string name="log_day_success">Bugünü Tamamla</string>
+
+    <!-- AI Coach -->
+    <string name="coach_title">VitaLog AI Sağlık Koçu</string>
+    <string name="coach_disclaimer">Yapay zeka içgörüleri tahmini ve bilgilendiricidir. Tıbbi tavsiye değildir.</string>
+    <string name="ask_coach_hint">Beslenme, alışkanlıklar veya ilerlemen hakkında soru sor...</string>
+
+    <!-- Reports & Export -->
+    <string name="reports_title">Raporlarım ve Veri Dışa Aktarma</string>
+    <string name="tab_daily_diary">Günlük Yemek Günlüğü</string>
+    <string name="tab_custom_report">Özel Rapor</string>
+    <string name="tab_story_card">Hikaye Kartı (9:16)</string>
+    <string name="export_pdf">PDF Olarak Dışa Aktar</string>
+    <string name="export_csv">CSV / Excel Olarak Dışa Aktar</string>
+    <string name="share_whatsapp">WhatsApp ile Paylaş</string>
+    <string name="share_email">E-posta ile Paylaş</string>
+    <string name="select_categories">Dışa Aktarılacak Kategorileri Seçin</string>
+    <string name="date_range">Tarih Aralığı</string>
+    <string name="generate_report">Raporu Oluştur ve Paylaş</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Ayarlar ve Modül Yönetimi</string>
+    <string name="language_select">Dil Seçimi</string>
+    <string name="module_management">Modül Yönetimi</string>
+    <string name="module_calories">Kalori &amp; Beslenme</string>
+    <string name="module_water">Su Takibi</string>
+    <string name="module_fasting">Aralıklı Oruç</string>
+    <string name="module_habits">Alışkanlık &amp; Mücadeleler</string>
+    <string name="module_weight">Kilo &amp; Vücut Ölçümleri</string>
+    <string name="module_activity">Aktivite &amp; Egzersiz</string>
+    <string name="module_ai_coach">AI Koç</string>
+</resources>

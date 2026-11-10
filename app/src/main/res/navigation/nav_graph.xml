@@ -3,35 +3,42 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/recordListFragment">
+    app:startDestination="@+id/navigation_dashboard">
 
     <fragment
-        android:id="@+id/recordListFragment"
-        android:name="com.example.healthtracker.ui.RecordListFragment"
-        android:label="Kayıtlar"
-        tools:layout="@layout/fragment_record_list">
-        <action
-            android:id="@+id/action_to_addUserFragment"
-            app:destination="@id/addUserFragment" />
-        <action
-            android:id="@+id/action_to_addRecordFragment"
-            app:destination="@id/addRecordFragment" />
-    </fragment>
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.healthtracker.ui.dashboard.DashboardFragment"
+        android:label="@string/nav_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
 
     <fragment
-        android:id="@+id/addUserFragment"
-        android:name="com.example.healthtracker.ui.AddUserFragment"
-        android:label="Kullanıcı Ekle"
-        tools:layout="@layout/fragment_add_user" />
+        android:id="@+id/navigation_meals"
+        android:name="com.example.healthtracker.ui.meals.MealsFragment"
+        android:label="@string/nav_meals"
+        tools:layout="@layout/fragment_meals" />
 
     <fragment
-        android:id="@+id/addRecordFragment"
-        android:name="com.example.healthtracker.ui.AddRecordFragment"
-        android:label="Kayıt Ekle"
-        tools:layout="@layout/fragment_add_record">
-        <argument
-            android:name="userId"
-            app:argType="long" />
-    </fragment>
+        android:id="@+id/navigation_habits"
+        android:name="com.example.healthtracker.ui.habits.HabitsFragment"
+        android:label="@string/nav_habits"
+        tools:layout="@layout/fragment_habits" />
+
+    <fragment
+        android:id="@+id/navigation_coach"
+        android:name="com.example.healthtracker.ui.coach.CoachFragment"
+        android:label="@string/nav_coach"
+        tools:layout="@layout/fragment_coach" />
+
+    <fragment
+        android:id="@+id/navigation_reports"
+        android:name="com.example.healthtracker.ui.reports.ReportsFragment"
+        android:label="@string/nav_reports"
+        tools:layout="@layout/fragment_reports" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.healthtracker.ui.settings.ProfileSettingsFragment"
+        android:label="@string/nav_profile"
+        tools:layout="@layout/fragment_profile_settings" />
 
 </navigation>
