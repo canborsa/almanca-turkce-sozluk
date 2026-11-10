@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">VitaLog</string>
+    <string name="tagline">Kleine Schritte. Große Veränderungen.</string>
+
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_meals">Mahlzeiten</string>
+    <string name="nav_habits">Gewohnheiten</string>
+    <string name="nav_coach">KI-Coach</string>
+    <string name="nav_reports">Berichte</string>
+    <string name="nav_profile">Profil</string>
+
+    <string name="greeting_hello">Hallo, %1$s!</string>
+    <string name="daily_status">Dein Wohlbefinden für heute im Überblick.</string>
+    <string name="card_calories">Kalorien &amp; Energie</string>
+    <string name="card_hydration">Hydratation</string>
+    <string name="card_fasting">Intervallfasten</string>
+    <string name="card_habits">Aktive Challenges</string>
+    <string name="card_activity">Heutige Aktivitäten</string>
+    <string name="card_weight">Gewicht &amp; Fortschritt</string>
+    <string name="card_ai_coach">KI-Coach Tipp</string>
+
+    <string name="unit_kcal">kcal</string>
+    <string name="unit_g">g</string>
+    <string name="unit_ml">ml</string>
+    <string name="unit_l">L</string>
+    <string name="unit_kg">kg</string>
+    <string name="unit_min">Min</string>
+    <string name="unit_steps">Schritte</string>
+
+    <string name="meal_breakfast">Frühstück</string>
+    <string name="meal_lunch">Mittagessen</string>
+    <string name="meal_dinner">Abendessen</string>
+    <string name="meal_snack">Snack</string>
+    <string name="nutrient_protein">Eiweiß</string>
+    <string name="nutrient_carbs">Kohlenhydrate</string>
+    <string name="nutrient_fat">Fett</string>
+    <string name="nutrient_sugar">Zucker</string>
+    <string name="nutrient_fiber">Ballaststoffe</string>
+    <string name="nutrient_sodium">Natrium</string>
+    <string name="add_food">Lebensmittel hinzufügen</string>
+    <string name="search_food_hint">Lebensmittel oder Gericht suchen...</string>
+    <string name="portion_size">Portion</string>
+    <string name="quick_add">Schnell hinzufügen</string>
+
+    <string name="water_goal">Tägliches Wasserziel</string>
+    <string name="water_consumed">%1$d / %2$d ml</string>
+
+    <string name="fasting_active">Fastenzeit läuft</string>
+    <string name="fasting_eating">Essensfenster</string>
+    <string name="start_fast">Fasten starten</string>
+    <string name="end_fast">Fasten beenden</string>
+
+    <string name="challenge_sugar_free">Zuckerfrei-Challenge</string>
+    <string name="challenge_flour_free">Weißmehl reduzieren</string>
+    <string name="challenge_active_days">%1$d Tage Serie</string>
+    <string name="log_day_success">Heute abgeschlossen</string>
+
+    <string name="coach_title">VitaLog KI-Gesundheitscoach</string>
+    <string name="coach_disclaimer">Schätzungen und Orientierungswerte. Keine medizinische Beratung.</string>
+    <string name="ask_coach_hint">Frage zu Ernährung, Gewohnheiten oder Fortschritt...</string>
+
+    <string name="reports_title">Meine Berichte &amp; Datenexport</string>
+    <string name="tab_daily_diary">Tages-Ernährungstagebuch</string>
+    <string name="tab_custom_report">Individueller Bericht</string>
+    <string name="tab_story_card">Story-Karte (9:16)</string>
+    <string name="export_pdf">Als PDF exportieren</string>
+    <string name="export_csv">Als CSV / Excel exportieren</string>
+    <string name="share_whatsapp">Über WhatsApp teilen</string>
+    <string name="share_email">Per E-Mail teilen</string>
+    <string name="select_categories">Kategorien auswählen</string>
+    <string name="date_range">Datumsbereich</string>
+    <string name="generate_report">Bericht erstellen &amp; teilen</string>
+
+    <string name="settings_title">Einstellungen &amp; Module</string>
+    <string name="language_select">Sprache wählen</string>
+    <string name="module_management">Modulverwaltung</string>
+    <string name="module_calories">Kalorien &amp; Ernährung</string>
+    <string name="module_water">Hydratation</string>
+    <string name="module_fasting">Intervallfasten</string>
+    <string name="module_habits">Gewohnheiten &amp; Challenges</string>
+    <string name="module_weight">Gewicht &amp; Körpermaße</string>
+    <string name="module_activity">Aktivität &amp; Sport</string>
+    <string name="module_ai_coach">KI-Coach</string>
+</resources>

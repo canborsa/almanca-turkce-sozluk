@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="red">#FFFF0000</color>
-    <color name="blue">#FF0000FF</color>
+    <!-- Brand Identity Palette -->
+    <color name="primary">#6658E8</color>
+    <color name="primary_variant">#5042D0</color>
+    <color name="primary_light">#EAE8FD</color>
+
+    <color name="secondary">#20C9B0</color>
+    <color name="secondary_variant">#17A691</color>
+    <color name="secondary_light">#E0F9F5</color>
+
+    <!-- Category Accents -->
+    <color name="accent_activity">#3987FF</color>
+    <color name="accent_activity_light">#E6F0FF</color>
+
+    <color name="accent_nutrition">#45B978</color>
+    <color name="accent_nutrition_light">#E8F7EF</color>
+
+    <color name="accent_hydration">#35B8F4</color>
+    <color name="accent_hydration_light">#E6F7FD</color>
+
+    <color name="accent_energy">#FFAA45</color>
+    <color name="accent_energy_light">#FFF4E6</color>
+
+    <color name="accent_trophy">#F3C74F</color>
+    <color name="accent_trophy_light">#FEF9E7</color>
+
+    <!-- System / Neutral Colors -->
+    <color name="background_light">#F8F9FD</color>
+    <color name="surface_light">#FFFFFF</color>
+    <color name="text_primary">#1C1E23</color>
+    <color name="text_secondary">#6E7687</color>
+    <color name="text_tertiary">#A1A7B5</color>
+    <color name="divider">#ECEEF2</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="error">#E53935</color>
+    <color name="success">#43A047</color>
+    <color name="warning">#FB8C00</color>
 </resources>

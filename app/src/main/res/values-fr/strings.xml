@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">VitaLog</string>
+    <string name="tagline">Petits pas. Grands changements.</string>
+
+    <string name="nav_dashboard">Tableau de bord</string>
+    <string name="nav_meals">Repas</string>
+    <string name="nav_habits">Habitudes</string>
+    <string name="nav_coach">Coach IA</string>
+    <string name="nav_reports">Rapports</string>
+    <string name="nav_profile">Profil</string>
+
+    <string name="greeting_hello">Bonjour, %1$s !</string>
+    <string name="daily_status">Voici votre bilan bien-être du jour.</string>
+    <string name="card_calories">Calories et Énergie</string>
+    <string name="card_hydration">Hydratation</string>
+    <string name="card_fasting">Jeûne Intermittent</string>
+    <string name="card_habits">Défis Actifs</string>
+    <string name="card_activity">Activités du Jour</string>
+    <string name="card_weight">Poids et Progrès</string>
+    <string name="card_ai_coach">Conseil du Coach IA</string>
+
+    <string name="unit_kcal">kcal</string>
+    <string name="unit_g">g</string>
+    <string name="unit_ml">ml</string>
+    <string name="unit_l">L</string>
+    <string name="unit_kg">kg</string>
+    <string name="unit_min">min</string>
+    <string name="unit_steps">pas</string>
+
+    <string name="meal_breakfast">Petit-déjeuner</string>
+    <string name="meal_lunch">Déjeuner</string>
+    <string name="meal_dinner">Dîner</string>
+    <string name="meal_snack">Collation</string>
+    <string name="nutrient_protein">Protéines</string>
+    <string name="nutrient_carbs">Glucides</string>
+    <string name="nutrient_fat">Lipides</string>
+    <string name="nutrient_sugar">Sucres</string>
+    <string name="nutrient_fiber">Fibres</string>
+    <string name="nutrient_sodium">Sodium</string>
+    <string name="add_food">Ajouter un aliment</string>
+    <string name="search_food_hint">Rechercher un aliment ou plat...</string>
+    <string name="portion_size">Portion</string>
+    <string name="quick_add">Ajout rapide</string>
+
+    <string name="water_goal">Objectif quotidien en eau</string>
+    <string name="water_consumed">%1$d / %2$d ml</string>
+
+    <string name="fasting_active">Jeûne en cours</string>
+    <string name="fasting_eating">Fenêtre de repas</string>
+    <string name="start_fast">Démarrer le jeûne</string>
+    <string name="end_fast">Terminer le jeûne</string>
+
+    <string name="challenge_sugar_free">Défi Sans Sucre</string>
+    <string name="challenge_flour_free">Réduction de Farine Blanche</string>
+    <string name="challenge_active_days">Série de %1$d Jours</string>
+    <string name="log_day_success">Complété Aujourd\'hui</string>
+
+    <string name="coach_title">Coach Santé IA VitaLog</string>
+    <string name="coach_disclaimer">Estimations et informations. Ne constitue pas un avis médical.</string>
+    <string name="ask_coach_hint">Posez une question sur la nutrition, vos habitudes...</string>
+
+    <string name="reports_title">Mes Rapports et Exportation</string>
+    <string name="tab_daily_diary">Journal Alimentaire du Jour</string>
+    <string name="tab_custom_report">Rapport Personnalisé</string>
+    <string name="tab_story_card">Carte Story (9:16)</string>
+    <string name="export_pdf">Exporter en PDF</string>
+    <string name="export_csv">Exporter en CSV / Excel</string>
+    <string name="share_whatsapp">Partager sur WhatsApp</string>
+    <string name="share_email">Partager par e-mail</string>
+    <string name="select_categories">Sélectionner les catégories</string>
+    <string name="date_range">Période</string>
+    <string name="generate_report">Générer et Partager</string>
+
+    <string name="settings_title">Paramètres et Modules</string>
+    <string name="language_select">Choisir la langue</string>
+    <string name="module_management">Gestion des modules</string>
+    <string name="module_calories">Calories et Nutrition</string>
+    <string name="module_water">Hydratation</string>
+    <string name="module_fasting">Jeûne Intermittent</string>
+    <string name="module_habits">Habitudes et Défis</string>
+    <string name="module_weight">Poids et Mensurations</string>
+    <string name="module_activity">Activité et Exercice</string>
+    <string name="module_ai_coach">Coach IA</string>
+</resources>
